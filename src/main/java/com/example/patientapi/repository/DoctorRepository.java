@@ -34,9 +34,9 @@ public class DoctorRepository {
         GeneralResponse generalResponse = new GeneralResponse();
         try {
             doctorId++;
-            doctor.setDoctorId("d"+doctorId);
-            doctorMap.put("d"+doctorId, doctor);
-            generalResponse.setId("d"+doctorId);
+            doctor.setDoctorId("dc"+doctorId);
+            doctorMap.put("dc"+doctorId, doctor);
+            generalResponse.setId("dc"+doctorId);
             generalResponse.setResult("Success");
         } catch (Exception e) {
             System.out.println("Failure " + e.getMessage());
